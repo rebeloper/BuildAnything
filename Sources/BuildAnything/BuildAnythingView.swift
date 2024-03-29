@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-public struct BuildAnythingView<Content: View>: View {
+public struct BuildAnythingView: View {
     
-    @ViewBuilder public var content: () -> Content
+    private var prompt: String = ""
     
-    public init(@ViewBuilder content: @escaping () -> Content) {
-        self.content = content
+    public init(prompt: String) {
+        self.prompt = prompt
     }
     
     public var body: some View {
-        content()
+        VStack {
+            Text("🤪")
+                .font(.largeTitle)
+            Text("April's Fool")
+                .font(.title)
+        }
     }
 }
