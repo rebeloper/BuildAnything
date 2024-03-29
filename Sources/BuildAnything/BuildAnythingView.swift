@@ -18,9 +18,9 @@ public struct BuildAnythingView: View {
     public var body: some View {
         VStack {
             Text("🤪")
-                .font(.largeTitle)
-            Text("April's Fool")
-                .font(.title)
+                .font(.system(size: 100))
+            Text("April Fools")
+                .font(.system(size: 80))
         }
     }
 }
